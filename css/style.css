@@ -1,0 +1,765 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: #333333;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.mv {
+  padding: 20px 15px;
+  -webkit-transition: 440ms;
+  transition: 440ms;
+}
+
+.move {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+header {
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+header .hamber {
+  cursor: pointer;
+}
+
+header .hamber div {
+  width: 18px;
+  height: 3px;
+  background-color: #333333;
+  margin: 3px auto;
+}
+
+header .myList {
+  position: absolute;
+  background-color: #333333;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 550ms;
+  transition: 550ms;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+header .myList .close {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-left: calc(50% - 20px);
+  margin-top: 25px;
+}
+
+header .myList .close img {
+  max-width: 20px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+header .myList ul {
+  text-align: center;
+  margin-top: 30px;
+}
+
+header .myList ul a {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+header .myList ul li {
+  -webkit-transition: 330ms;
+  transition: 330ms;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header .myList ul li:hover {
+  background-color: #FFF;
+}
+
+header .myList ul li:hover a {
+  color: #333333;
+}
+
+header .open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 550ms;
+  transition: 550ms;
+  overflow: hidden;
+}
+
+section .tit {
+  width: 90%;
+  margin: auto;
+}
+
+section .tit a {
+  color: #2D9CDB;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+section .tit h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section img {
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 18px;
+}
+
+section .desc {
+  width: 90%;
+  margin: auto;
+}
+
+section .desc h2 {
+  font-size: 24px;
+  font-weight: 500;
+  width: 80%;
+}
+
+section .desc p {
+  font-size: 12.5px;
+  font-weight: 400;
+  margin: 30px auto;
+  line-height: 1.6;
+}
+
+section .desc div a {
+  color: #828282;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+section .desc div input {
+  width: 100%;
+  background-color: #F2F2F2F2;
+  border: none;
+  padding: 15px 4px 15px 20px;
+  border-radius: 12px;
+  outline-color: #2D9CDB;
+}
+
+section .desc div .in {
+  position: relative;
+}
+
+section .desc div button {
+  background-color: #2D9CDB;
+  color: #FFF;
+  border: none;
+  position: absolute;
+  top: 10%;
+  right: 5px;
+  height: 80%;
+  width: 60px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+section .middle h2 {
+  width: 90%;
+  margin: 3.5em auto;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+section .middle .services {
+  margin: auto;
+}
+
+section .middle .services button {
+  border: none;
+}
+
+section .middle .services div {
+  cursor: pointer;
+  padding: 20px 14px;
+  border-radius: 24px;
+  -webkit-transition: 330ms;
+  transition: 330ms;
+}
+
+section .middle .services div:hover {
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+          box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+section .middle .services div:hover button:last-child {
+  background-color: #2D9CDB;
+  color: #FFF;
+}
+
+section .middle .services div h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+section .middle .services div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+section .middle .services div button {
+  cursor: pointer;
+}
+
+section .middle .services div button:last-child {
+  color: #828282;
+  background-color: #E0E0E0;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  -webkit-transition: 330ms;
+  transition: 330ms;
+}
+
+section .middle .services .UX .A {
+  background-color: #2D9CDB;
+  border-radius: 16px;
+  width: 85px;
+  height: 85px;
+}
+
+section .middle .services .UX .A img {
+  max-width: 50px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+section .middle .services .FE .B {
+  height: 85px;
+  width: 85px;
+  background-color: #27AE60;
+  border-radius: 16px;
+}
+
+section .middle .services .FE .B img {
+  max-width: 50px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+section .middle .services .BE .C {
+  height: 85px;
+  width: 85px;
+  background-color: #EB5757;
+  border-radius: 16px;
+}
+
+section .middle .services .BE .C img {
+  max-width: 50px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+section .middle .design h2 {
+  margin-top: 100px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+section .middle .design div img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+section .middle .design div span {
+  margin-top: 15px;
+  color: #828282;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+section .middle .design div h3 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section .middle .design div .see_m {
+  margin-top: 35px;
+}
+
+section .middle .design div .see_m a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2D9CDB;
+}
+
+section .middle .teams {
+  margin-top: 100px;
+}
+
+section .middle .teams .mT .meet > h3 {
+  color: #eb5757;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+section .middle .teams .mT h2 {
+  margin: 0;
+  width: 100%;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+section .middle .teams .mT p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+section .middle .teams .team_pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .middle .teams .team_pic .girl {
+  width: 50%;
+}
+
+section .middle .teams .team_pic .girl img {
+  width: 100%;
+}
+
+section .middle .teams .team_pic .boys {
+  width: 47%;
+}
+
+section .middle .teams .team_pic .boys .f > img {
+  width: 90%;
+  margin: 0;
+}
+
+section .middle .teams .team_pic .boys .s > img {
+  width: 100%;
+  margin: 0;
+}
+
+section .middle .teams .conclure {
+  margin: auto;
+  margin-top: 5em;
+}
+
+section .middle .teams .conclure p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section .middle .teams .persone_4 {
+  margin-bottom: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .middle .teams .persone_4 .Pic {
+  width: 30%;
+}
+
+section .middle .teams .persone_4 .Pic img {
+  max-width: 180px;
+}
+
+section .middle .teams .persone_4 .info {
+  width: 65%;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+section .middle .teams .persone_4 .info h4 {
+  font-size: 24px;
+  line-height: 2.4;
+}
+
+section .middle .teams .persone_4 .info h5 {
+  color: #828282;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #100E1D;
+  text-transform: capitalize;
+}
+
+footer .foo {
+  width: 90%;
+  margin: auto;
+}
+
+footer ul > li {
+  margin: 15px auto;
+}
+
+footer ul > li a {
+  padding: 5px 15px;
+  border-radius: 18px;
+  color: #FFFFFF;
+  -webkit-transition: 330ms;
+  transition: 330ms;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px auto;
+  text-align: start;
+}
+
+footer ul > li a:hover {
+  background-color: #FFF;
+  color: #100E1D;
+}
+
+footer .social {
+  margin: 60px auto;
+}
+
+footer .social h1 {
+  color: #fff;
+}
+
+footer .social .icons {
+  margin-top: 8px;
+}
+
+footer .join a {
+  color: #828282;
+  font-size: 10px;
+}
+
+footer .join .jo {
+  position: relative;
+}
+
+footer .join .jo input {
+  width: 100%;
+  background-color: #F2F2F2F2;
+  border: none;
+  padding: 15px 4px 15px 20px;
+  border-radius: 12px;
+  outline-color: #2D9CDB;
+}
+
+footer .join .jo button {
+  background-color: #2D9CDB;
+  color: #FFF;
+  border: none;
+  position: absolute;
+  top: 10%;
+  right: 5px;
+  height: 80%;
+  width: 60px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+  .md {
+    width: 95%;
+    margin: auto;
+  }
+  footer > .md {
+    width: 95%;
+    margin: auto;
+  }
+  footer .join .jo {
+    width: 300px;
+  }
+  section .top .desc div {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .md {
+    width: 90%;
+  }
+  footer > .md {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .md {
+    width: 85%;
+  }
+  footer > .md {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .md {
+    width: 80%;
+  }
+  footer > .md {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .md {
+    width: 75%;
+  }
+  footer > .md {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .md {
+    width: 98%;
+  }
+  .footer > .md {
+    width: 98%;
+  }
+  header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .logo {
+    width: 30%;
+  }
+  header nav {
+    width: 60%;
+  }
+  header nav .hamber {
+    display: none;
+  }
+  header nav .myList {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  header nav .myList .close {
+    display: none;
+  }
+  header nav .myList ul {
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav .myList ul li a {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 18px;
+    -webkit-transition: 450ms;
+    transition: 450ms;
+  }
+  header nav .myList ul li a:hover {
+    background-color: #333333;
+    color: #fff;
+  }
+  section .top .tit {
+    margin-left: 6em;
+  }
+  section .top .tit a {
+    font-size: 18px;
+  }
+  section .top .tit h1 {
+    font-size: 38px;
+    width: 420px;
+  }
+  section .top .desc {
+    margin-left: 6em;
+  }
+  section .top .desc h2 {
+    font-size: 38px;
+    width: 300px;
+  }
+  section .top .desc p {
+    font-size: 18px;
+    font-weight: 400;
+    width: 320px;
+    margin-left: 0;
+  }
+  section .middle {
+    width: 95%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 5em;
+  }
+  section .middle h2 {
+    font-size: 36px;
+    width: 350px;
+    margin: 0;
+    margin-bottom: 2em;
+  }
+  section .middle .services {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section .middle .design {
+    width: 95%;
+    margin: auto;
+  }
+  section .middle .design h2 {
+    font-size: 36px;
+    width: 400px;
+    margin-bottom: 15px;
+  }
+  section .middle .design .designs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  section .middle .design .designs div {
+    width: 95%;
+  }
+  section .middle .design .designs div:nth-child(1) {
+    margin-top: 120px;
+  }
+  section .middle .design .designs div:nth-child(3) {
+    margin-top: 100px;
+  }
+  section .middle .design .designs div:nth-child(5) {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    text-align: end;
+  }
+  section .middle .design .teams .flx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section .middle .design .teams .flx .mT {
+    width: 40%;
+  }
+  section .middle .design .teams .flx .mT h2 {
+    font-size: 36px;
+    width: 280px;
+  }
+  section .middle .design .teams .flx .mT p {
+    font-size: 24px;
+    width: 350px;
+  }
+  section .middle .design .teams .flx .team_pic {
+    width: 50%;
+    margin-bottom: 150px;
+  }
+  section .middle .design .teams .conclure p {
+    font-size: 32px;
+    width: 800px;
+    margin-bottom: 2em;
+  }
+  footer .foo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .foo .social {
+    margin: 0;
+  }
+  footer .foo ul {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .md {
+    width: 90%;
+  }
+  footer > .md {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .md {
+    width: 85%;
+  }
+  footer > .md {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
